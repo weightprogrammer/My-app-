@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Reset CSS*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active
+input:focus,
+input:active
+textarea:focus,
+textarea:active {
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2B292D;
+    letter-spacing: -0.01em;
+}
+
+.fill-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    color: #FFF;
+    background-color: #3040c4;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fill-button.inverted {
+    background-color: #FFF;
+    color: #3040c4;
+}
+
+.fill-button:hover {
+    opacity: 0.5;
+}
+
+.section {
+    padding: 10px 0;
+}
+
+.section-category {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.row .justify-content-center{
+    height: 190px;
+}
+
+.section-title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.0588235294;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+}
+/* Landing */
+
+.landing {
+    background-color: #FDDED8;
+    text-align: center;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.landing-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2B292D;
+}
+
+.landing-desc {
+    margin-bottom: 20px;
+}
+
+.landing .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child {
+    margin-right: 8px;
+}
+
+        /*Service*/
+        .service {
+            padding: 80px 0;
+            background-color: #F4F5F7;
+        }
+
+        .service .col-12:first-child {
+            margin-bottom: 40px;
+        }
+
+        .service-title {
+            margin-top: 60px;
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 1.3636363636;
+            letter-spacing: -0.04em;
+            color: #2B292D;
+        }
+    
+        /* program*/
+.program .row:first-child {
+    margin-bottom: 32px;
+}
+
+        .program .section-category {
+            color: #009B4D;
+        }
+
+        
+
+        .program .col-md-4 {
+            margin-bottom: 20px;
+
+        }
+
+        .program .col-md-4:last-child {
+            margin-bottom: 0;
+
+        }
+
+        .program-card {
+            display: block;
+            padding: 24px 0 32px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #FFF;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), 
+            inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        }
+
+        .program-card:hover {
+            background-color: #3141C5;
+            box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 
+            0px 13px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .program-card:hover strong{
+         color: #FFF;
+        }
+
+
+        .program-card img {
+            display: block;
+            width: auto;
+            height: 195px;
+            margin: 0 auto 16px;
+        }
+        .program-card strong {
+            font-size: 20px;
+            line-height: 1.3333333333;
+            letter-spacing: -0.02em;
+        }
+
+        /* curriculum*/
+        .curriculum .row:first-child {
+            margin-bottom: 40px;
+        }
+
+        .curriculum .row:last-child .col-12:first-child {
+            margin-bottom: 40px;
+        }
+
+        .curriculum .section-category {
+            color: #0189D1;
+        }
+
+        .curriculum .section-desc {
+            margin-bottom: 32px;
+        }
+
+        .curriculum-image {
+            display: none;
+            
+        }
+
+        .curriculum-detail-desc {
+            font-size: 15px;
+            line-height: 1.46666666667;
+            color: #2B292D;
+            letter-spacing: -0.01em;
+        }
+
+
+    /*subscription*/
+    .subscription {
+        padding: 40px;
+        text-align: center;
+        background-color: #F2F8FA;
+    }
+    
+    .subscription-image {
+        padding: 25px;
+    }
+
+    .subscription-image img {
+        display: block;
+        width: auto;
+        height: 190px;
+        margin: 0 auto;
+    }
+
+    .subscription-title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        color: #2B292D;
+    }
+
+    .subscription-desc {
+        margin-bottom: 24px;
+    }
+
+    .subscription .input-group {
+        margin-bottom: 8px;
+    }
+    
+    .subscription .input-group input {
+        width: 100%;
+        height: 48px;
+        padding: 0 16px;
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 8px;
+        background-color: #FFF;
+    }
+
+    .subscription .input-group .fill-button {
+        width: 100%;
+    }
+    
+    .subscription-form-notice {
+        font-size: 13px;
+        line-height: 1.5384615385;
+        letter-spacing: 0;
+        color: #7B7B7E;
+    }
+
+    .subscription-form .form-notice a {
+        text-decoration: underline;
+        color: #3040c4;
+
+    }
+
+    /*footer*/
+
+    .footer {
+        padding: 24px 0;
+    }
+    .footer-link {
+        margin-bottom: 8px;
+    }
+    
+    .footer-link:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-link a {
+        font-size: 14px;
+        line-height: 1.7142857143;
+        color: #807F81;
+    }
+
+
+
+
+
+
+/* > 768px (desktop) */
+@media screen and (min-width: 768px) {
+    /* Reset CSS*/
+    p{
+        font-size: 17px;
+        line-height: 1.3636363636;
+    }
+
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.5555555556;
+    }
+
+    .section {
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .section-category {
+        margin-top: 60px;
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 1.0909090909;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 27px;
+        line-height: 1;
+    }
+
+
+        /* landing */
+    .landing-content {
+        height: auto;
+        padding: 120px 0;
+    }
+
+    .landing-title {
+        margin-bottom: 32px;
+        font-size: 40px;
+        line-height: 1.0285714286;
+    }
+
+    .landing-desc {
+        margin-bottom: 32px;
+    }
+
+    .landing .button-group .fill-button:first-child {
+        margin-right: 16px;
+    }
+
+    /*Service*/
+    .service .col-12:first-child {
+        margin-bottom: 0;
+    }
+
+    .service-title {
+        
+        font-size: 15px;
+        line-height: 1.3076923077;
+    }
+    
+    /*program*/
+    .program {
+        text-align: center;
+    }
+
+    .program .row:first-child {
+        margin-bottom: 32px;
+    }
+
+    .program-card img {
+        margin-bottom: 24px;
+    }
+
+        .program-card strong {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    .row .align-liems-center{
+        text-align: center;
+    }
+
+    /* curriculum*/
+
+    .curriculum .row:first-child {
+        margin-bottom: 24px;
+    }
+
+    /* .curriculum .section-desc {
+        margin-bottom: 72px;
+    } */
+    .curriculum .row:last-child .col-12:first-child {
+        margin-bottom: 0;
+    }
+
+    .curriculum-image {
+        display: block
+    }
+
+
+    .curriculum-image img {
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+    }
+
+    .curriculum-detail-desc {
+        font-size: 18px;
+        line-height: 1.4444444444;
+    }
+
+    /*subscription*/
+
+    .subscription {
+        padding: 80px 0;
+        text-align: left;
+    }
+
+    .subscription-image {
+        padding: 8px 0;
+    }
+
+    .subscription-image img {
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .subscription-title {
+        font-size: 40px;
+    }
+
+    .subscription .input-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+
+    .subscription .input-group input {
+        height: 56px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.3333333333;
+    }
+
+    .subscription .input-group .fill-button {
+        width: 160px;
+    }
+
+    .subscription-form-notice {
+        width: 14px;
+        line-height: 1.7142857143;
+    }
+    
+    .footer {
+        padding: 16px;
+
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-link {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .footer-link:last-child {
+        margin-right: 0;
+    }
+
+
+
+
+        /* Custom Grid Syste - Fix container width */
+    @media screen and (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
